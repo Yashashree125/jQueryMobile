@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Creating Simple jQuery Mobile Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">   
+<div data-role="header" data-theme="a">
+<div data-role="navbar" data-iconpos="top">
+<ul>
+<li>
+<a href="#page2" data-transition="fade" data-theme="" data-icon="home">
+Home
+</a>
+</li>
+<li>
+<a href="#page1" data-transition="fade" data-theme="" data-icon="info">
+About
+</a>
+</li>
+<li>
+<a href="#page1" data-transition="fade" data-theme="" data-icon="star">
+Services
+</a>
+</li>
+<li>
+<a href="#page1" data-transition="fade" data-theme="" data-icon="check">
+Contact
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div data-role="content">
+<ul data-role="listview" data-divider-theme="b" data-inset="true">
+<li data-theme="c">
+<a href="#page1" data-transition="slide">
+Register Now
+</a>
+</li>
+<li data-theme="c">
+<a href="#page2" data-transition="slide">
+Sign In
+
+</a>
+</li>
+<li data-theme="c">
+<a href="#page1" data-transition="flip">
+Track Info
+</a>
+</li>
+<li data-theme="c">
+<a href="#page3" data-transition="slide">
+Feedback
+</a>
+</li>
+</ul>
+</div>
+<div data-theme="a" data-role="footer" data-position="fixed">
+<h2> <a href="#" style="color:White; font-size:small">PY.com</a></h2>
+</div>
+</div>
+<div data-role="page" id="page2">
+    <div class="login-page">
+        <div class="form">
+    
+          <input type="text" id="username" placeholder="username" />
+          <input type="password" id="password" placeholder="password" />
+          <button id="login" type="button" onclick="login()">Login</button></br>
+    
+        </div>
+      </div>
+</div>
+
+</div>
+<div data-role="page" id="page3">
+  <div id="feedback">
+ 
+		<form>
+			<h2>We Love Emails, Do you?</h2>
+			<p><label>Name: </label><input type="text" /></p>
+			<p><label>Email: </label><input type="text" /></p>
+			<p><label>Subject: </label><input type="text" /></p>
+			<p><label>Message: </label><textarea></textarea></p>
+			<p><input type="button" value="Send&raquo;" class="btn"/></p>
+		</form>
+		<a href="#" class="pull_feedback" title="Click to leave feedback">Feedback</a>
+	</div>
+</div>
+</body>
+</html>
